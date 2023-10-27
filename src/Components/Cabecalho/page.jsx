@@ -7,6 +7,7 @@ export default function Cabecalho() {
         <div className="container-cab">
             <p><Link href="/">Home</Link></p>
             <p><Link href="/tabela/queijo">Tabela de queijos</Link></p>
+            <p><Link href="/login">Login</Link></p>
         </div>
     )
   }
