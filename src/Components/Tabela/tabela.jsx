@@ -2,7 +2,7 @@ import React from 'react'
 
 export async function TabelaDados() {
 
-  const response = await fetch('http://localhost:3001/api/laticionios')
+  const response = await fetch('http://localhost:3000/api/laticionios')
   const queijos = await response.json();
 
   return (

@@ -18,7 +18,7 @@ export async function GET(request ,{params}) {
         const queijo = queijos.find(queijo => queijo.id == id)
         return NextResponse.json(queijo);
     } else {
-        return id == 0 ? NextResponse.json(queijos) : NextResponse.redirect('http://localhost:3001/');
+        return id == 0 ? NextResponse.json(queijos) : NextResponse.redirect('http://localhost:3000/');
     }
 
 }
