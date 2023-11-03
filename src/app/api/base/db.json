@@ -4,36 +4,37 @@
             "id": 1,
             "nome": "gabriel",
             "email": "gabriel@gmail.com",
-            "senha": 12345, 
-            "avatar": "https://avatars.githubusercontent.com/u/85140913?v=4"
+            "senha": 12345
         },
         {
             "id": 2,
-            "nome": "lucas", 
-            "email": "lucas@gmail.com", 
-            "senha": 54321, 
-            "avatar": "https://avatars.githubusercontent.com/u/126726437?v=4"
+            "nome": "lucas",
+            "email": "lucas@gmail.com",
+            "senha": 54321
         },
         {
-            "id": 3, 
-            "nome": "igor", 
-            "email": "igor@gmail.com", 
-            "senha": 13542, 
-            "avatar": "https://avatars.githubusercontent.com/u/126727096?v=4"
-        },   
-        {
-            "id": 4, 
-            "nome": "gustavo", 
-            "email": "gustavo@gmail.com", 
-            "senha": 24135, 
-            "avatar": "https://avatars.githubusercontent.com/u/126989023?v=4"
+            "id": 3,
+            "nome": "igor",
+            "email": "igor@gmail.com",
+            "senha": 13542
         },
         {
-            "id": 5, 
-            "nome": "yuri", 
-            "email": "yuri@gmail.com", 
-            "senha": 24531, 
-            "avatar": "https://avatars.githubusercontent.com/u/129622946?v=4"
+            "id": 4,
+            "nome": "gustavo",
+            "email": "gustavo@gmail.com",
+            "senha": 24135
+        },
+        {
+            "id": 5,
+            "nome": "yuri",
+            "email": "yuri@gmail.com",
+            "senha": 24531
+        },
+        {
+            "id": 6,
+            "nome": "diogo",
+            "email": "galina@gmail.com",
+            "senha": 12345
         }
     ]
 }

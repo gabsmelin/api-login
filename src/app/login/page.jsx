@@ -1,11 +1,14 @@
 "use client";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function LoginUsers() {
   //Mensage de STATUS!
   const [msg, setMsg] = useState("");
-
+  const navigate = useRouter();
   const [usuario, setUsuario] = useState({
+    info: "login",
     email: "",
     senha: "",
   });
@@ -40,6 +43,8 @@ export default function LoginUsers() {
             setMsg("Login efetuado com Sucesso!!");
             setTimeout(()=>{
                 setMsg("");
+                //redirecionando
+                navigate.push("/")
             },5000);
         }else{
             setMsg("Login ou Senha incorretos!");
@@ -87,6 +92,12 @@ export default function LoginUsers() {
             </div>
             <div>
               <button>LOGIN</button>
+            </div>
+            <div>
+              <p>Não tem cadastro? <Link href='/cadastro'>Cadastre-se</Link></p>
+            </div>
+            <div>
+              <Link href='/cadastro'>Esqueci minha senha</Link>
             </div>
           </fieldset>
         </form>
