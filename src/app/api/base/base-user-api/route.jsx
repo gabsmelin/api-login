@@ -9,19 +9,14 @@ export async function GET(request,{params}) {
 export async function POST(request,response) {
     //parseando o arquivo para o json nativo
     const body = await JSON.parse(file)
-    //console.log(body);
         
     //pegando a inserção do post
     const usuario = await request.json();
 
-    for(let x = 0; x < body.usuarios.length; x++) {
-        const u = body.usuarios[x];
-        console.log("Usuário da base: ", u.nome);
-        if(u.email == usuario.email && u.senha == usuario.senha) {
-            return NextResponse.json({"STATUS": "OK"})
-        }
+    const userValido = body.usuarios.find((user) => user.email == usuario.email && user.senha == usuario.senha);
+
+    if(!userValido) {
+        return NextResponse.json({"status":false})
     }
-
-
-    return NextResponse.json({"status                   ": "ok"})
+    return NextResponse.json({"status":true})
 }
